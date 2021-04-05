@@ -1,0 +1,75 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    height: 100%;
+}
+
+body {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.svg-top {
+    position: absolute;
+    width: 100%;
+    left: 0;
+    top: 0;
+}
+
+.svg-bot {
+    position: absolute;
+    width: 100%;
+    left: 0;
+    bottom: 0;
+}
+
+.thank-img {
+    width: 30%;
+    animation: animate 1.3s ease-in-out;
+}
+
+.thank {
+    background-image: linear-gradient(45deg, #fcefee, #fff);
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.thank div {
+    font-family: 'Indie Flower', cursive;
+    text-align: center;
+    padding: 3%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    animation: animate 1.1s ease-in-out;
+}
+
+h1 {
+    margin-bottom: 21px;
+    font-size: 4.5rem;
+    letter-spacing: 2.5px;
+}
+
+h3 {
+    font-size: 1.8rem;
+}
+
+@keyframes animate {
+    0% {
+        transform: translate(0, 50%);
+        opacity: 0;
+    }
+    100% {
+        transform: translate(0, 0);
+        opacity: 1;
+    }
+}
